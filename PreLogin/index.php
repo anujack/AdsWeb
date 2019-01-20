@@ -19,6 +19,6 @@ $root="http://localhost:8080/aw";
 </head>
 <body>
     <a href="./Login.php">Login</a><br><br>
-    <a href="./Signup.php">SignUp</a>
+    <a href="./Signup.php">SignUp as a consumer</a>
 </body>
 </html>
