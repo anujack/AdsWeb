@@ -21,7 +21,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   <a href ="../Signup.php" onclick="w3_close()" class="w3-bar-item w3-button">Sign Up</a>
 </nav>
 
-<!-- Top menu -->
+<!-- Top menu just for fun-->
 <div class="w3-top">
   <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
     <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
