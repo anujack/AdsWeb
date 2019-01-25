@@ -31,7 +31,7 @@ if(isset($_SESSION['username'])){
         ?>
     </div>
     <div class="form">
-        <form method="POST" action="./forms/Signup.php">
+        <form method="POST" action="./forms/cSignup.php">
         <label id="fName">First Name: </label><br>
         <input type="text" id="fName" placeholder="First Name" name="fName"><br><br>
         <label id="lName">Last Name: </label><br>
@@ -43,9 +43,6 @@ if(isset($_SESSION['username'])){
         <label id="password">Password: </label><br>
         <input type="password" id="password" name="password" placeholder="Password">
         <br><br>
-        <label id ="type">Please select one of the following</label><br>
-        <input type="radio" name="level" value="consumer"> Consumer<br>
-        <input type="radio" name="level" value="retailer"> Retailer<br>
         <button id="submit" type="submit">SignUp</button>
         </form>
     </div>
