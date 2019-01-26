@@ -23,17 +23,17 @@ if((isset($_POST['password']) && $_POST['password']==="")){
     exit();
 }
 // if every field was set store each into variables
-$first_name=mysqli_real_escape_string($conn,$_POST['fName']);
-$last_name=mysqli_real_escape_string($conn,$_POST['lName']);
+$name=mysqli_real_escape_string($conn,$_POST['name']);
+$address=mysqli_real_escape_string($conn,$_POST['address']);
 $username = mysqli_real_escape_string($conn,$_POST['username']);
 $email = mysqli_real_escape_string($conn,$_POST['email']);
 $password = mysqli_real_escape_string($conn,$_POST['password']);
 // Hashing the password
 $password = password_hash($password,PASSWORD_DEFAULT);
 // Query to search for the user first
-$query1 = "SELECT * FROM consumers WHERE username='$username' OR email='$email';";
+$query1 = "SELECT * FROM producers WHERE username='$username' OR email='$email';";
 // Query to add the user
-$query2 = "INSERT INTO consumers(first_name,last_name,username,email,pass) VALUES ('$first_name','$last_name','$username','$email','$password');";
+$query2 = "INSERT INTO producers(name,address,username,email,pass) VALUES ('$name','$address','$username','$email','$password');";
 if(mysqli_num_rows(mysqli_query($conn,$query1))>0){
     // if the user exists set error as the user exists
     header("Location: ../Signup.php?error=exists");
@@ -43,8 +43,9 @@ if(mysqli_num_rows(mysqli_query($conn,$query1))>0){
     mysqli_query($conn,$query2);
     $_SESSION['email']=$email;
     $_SESSION['username']=$username;
-    $_SESSION['first_name']=$first_name;
-    $_SESSION['last_name']=$last_name;
+    $_SESSION['name']=$name;
+    $_SESSION['address']=$address;
+    $_SESSION['type'] = "producer";
     header("Location: ../index.php");
     exit();
 }
