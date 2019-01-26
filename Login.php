@@ -35,8 +35,10 @@ if(isset($_SESSION['username'])){
             <label id="password">Password: </label><br>
             <input type="password" placeholder="Password" name="password" id="password"><br><br>
             <label id ="type">Please select one of the following</label><br>
-            <input type="radio" name="level" value="consumer"> Consumer<br>
-            <input type="radio" name="level" value="retailer"> Retailer<br>
+            <input type="radio" name="type" id="consumer" value="consumer"> 
+            <label for="consumer">Consumer</label><br>
+            <input type="radio" name="type" id="producer" value="retailer">
+            <label for="producer">Producer</label><br>
             <button type="submit" id="submit">Log In</button>
         </form>
     </div>

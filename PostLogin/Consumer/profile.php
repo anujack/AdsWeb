@@ -13,13 +13,13 @@
 </head>
 <body>
     <h1>My Profile</h1>
-    <form method="POST" action="../forms/profile.php">
+    <form method="POST" action="../../forms/profile.php">
         <label>First Name</label>
-        <input type="text" placeholder="First Name" name="first_name" value="<?php echo $_SESSION['first_name'];?>"><br><br>
+        <input type="text" name="first_name" value="<?php echo $_SESSION['first_name'];?>"><br><br>
         <label>Last Name</label>
-        <input type="text" placeholder="Last Name" name="last_name" value="<?php echo $_SESSION['last_name'];?>"><br><br>
+        <input type="text" name="last_name" value="<?php echo $_SESSION['last_name'];?>"><br><br>
         <label>Email</label>
-        <input type="text" placeholder="Email" name="email" value="<?php echo $_SESSION['email'];?>"><br><br>
+        <label><?php echo $_SESSION['email'];?></label><br><br>
         <label>Username:</label>
         <label><?php echo $_SESSION['username'];?></label><br><br>
         <label>Previous Password:</label>
