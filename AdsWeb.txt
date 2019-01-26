@@ -1,0 +1,17 @@
+AdsWeb:-
+
+Consumer Section ---
+1) Can search for offers around the place
+2) //Can get loyality points
+3) Serach tags and recommendation system
+4) Profile, login, signup
+5) Save location and favourite retailers
+6) Trending system(Hot picks)
+
+
+Retailers section ---
+1) Can make a profile, similar to website
+2) Publish offers with search tags ( Also include timer for the offer, also add tags)
+3) Consumer RSVP list and loyality bonus
+4) Similar to insta ads
+5) Community review
